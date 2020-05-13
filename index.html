@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutme</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+                }
+            }
+            });
+        });
+    </script>
+</head>
+<body class="background">
+    <div class="all">
+        <div>
+            <div class="topcolor">
+                <div class="myname">Li-Jun, Lin</div>
+                <div class="topic">
+                    <div class="topicinside" style="width: 15%;padding-left: 82px;"><a href="#me" style="text-decoration:none;color: white;">關於我</a></div>
+                    <div class="topicinside"><a href="#edu" style="text-decoration:none;color: white;">學歷背景</a></div>
+                    <div class="topicinside"><a href="#act" style="text-decoration:none;color: white;">社團經驗</a></div>
+                    <div class="topicinside"><a href="#work" style="text-decoration:none;color: white;">工作經驗</a></div>
+                    <div class="topicinside"><a href="#ph" style="text-decoration:none;color: white;">生活紀錄</a></div>
+                </div>
+            </div>    
+            <div class="motto"><img src="images/motto.png"></div>
+            <div>
+                <div class="topic1block">
+                    <div class="topic1"><a name="me">關於我</a></div>
+                    <div style="background-color: rgb(255, 241, 212);">
+                        <div class="topic1img">
+                            <img src="images/me.png">
+                        </div>
+                        <div class="topic1word">
+                            姓名：林俐君<br>
+                            生日：11/02<br>
+                            血型：B<br>
+                            星座：天蠍<br>
+                            興趣：看小說、玩遊戲、聽音樂<br>
+                            目標：順利畢業並找到不錯的工作！<br>
+                            自我期許：戒掉懶惰拖延症...
+                        </div>
+                    </div>
+                </div>
+                <div class="connect">
+                    <div>
+                        電話：<br>
+                        &emsp;0988926425<br><br>
+                        地址：<br>
+                        &emsp;台北市內湖區文德路66巷38弄<br>
+                        &emsp;(後面基於隱私就不寫完)<br><br>
+                        Email：<br>
+                        &emsp;lillian417cat@gmail.com<br><br><br>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/lillian417cat/" target="_blank"><img src="images/fb.png" style="padding-left: 285px;"></a>&ensp;<a href="https://www.instagram.com/lillianlin1102/?hl=zh-tw" target="_blank"><img src="images/ig.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="edutitle"><a name="edu">學歷背景</a></div>
+            <div style="background-color: rgb(255, 248, 240);">
+                <div class="eduimg"><img src="images/sh1.png"></div>
+                <div class="eduimg"><img src="images/sh2.png"></div>
+                <div class="eduimg"><img src="images/sh3.png"></div>
+                <div class="eduimg"><img src="images/sh4.png"></div>
+            </div>
+            <div class="acttitle"><a name="act">社團經驗</a></div>
+            <div style="background-color: rgb(255, 235, 191);">
+                <div class="actblock">
+                    <div class="actimg"><img src="images/act1.png"></div>
+                    <div class="actword" style="line-height: 28pt;">國、高中社團都是選擇合唱團，國中是因為喜歡而選擇加入合唱團，高中則是單純因為國中是合唱團了所以高中繼續加入合唱團。</div>
+                </div>
+                <div class="actblock">
+                    <div class="actimg"><img src="images/act2.png"></div>
+                    <div class="actword" style="line-height: 23pt;">大一大二有參加過溜冰社，印象深刻的就是元旦路溜，從中原出發，一路溜直排輪溜到台北總統府，從半夜12點出發到早上5點抵達，到達時真的很累，很令我印象深刻的體驗。</div>
+                </div>
+            </div>
+            <div class="worktitle"><a name="work">工作經驗</a></div>
+            <div style="background-color: rgb(255, 248, 240);">
+                <div style="width: 40%;display: inline-block;">
+                    <div class="workimg"><img src="images/work1.png"></div>
+                    <div class="workword" style="line-height: 20pt;">高三學測後，確認個人申請有上大學後就開始了我人生第一次的打工，餐廳的外場主任人很好，會很細心的教導我，也很感謝這家餐廳願意用我這個完全沒經驗的小菜鳥。</div>
+                </div>
+                <div style="width: 58%;display: inline-block;">
+                    <div class="workimg"><img src="images/work2.png" style="width: 80%;padding-top: 0px;"></div>
+                    <div class="workword" style="line-height: 30pt;padding-top: 0px;">我曾經在聯合資訊實習共5個月，我的收穫除了對於ERP更加的理解外，怎麼面對客戶且與客戶溝通也是我很大的收穫之一。</div>
+                </div>
+            </div>
+            <div class="imgtitle"><a name="ph">生活紀錄</a></div>
+            <div style="background-color: rgb(255, 235, 191);">
+                <div class="pimg"><img src="images/p1.png"></div>
+                <div class="pimg"><img src="images/p2.png"></div>
+                <div class="pimg"><img src="images/p3.png"></div>
+            </div>
+            <div>
+                <div class="pimg" style="padding-bottom: 60px;"><img src="images/p4.png" style="padding-top: 40px;"></div>
+                <div class="pimg" style="padding-bottom: 60px;"><img src="images/p5.png" style="padding-top: 40px;"></div>
+                <div class="pimg" style="padding-bottom: 60px;"><img src="images/p6.png" style="padding-top: 40px;"></div>
+            </div>
+            <div class="botton">Copyright © 2020 by LiJun</div>
+        </div>
+    </div>
+</body>
+</html>
